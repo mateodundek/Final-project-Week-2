@@ -56,16 +56,15 @@ h1 {
   }
 }
 
-  @keyframes fade-left {
-    0% {
-      opacity: 0;
-      transform: translateX(1200px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-
+@keyframes fade-left {
+  0% {
+    opacity: 0;
+    transform: translateX(1200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .logo__img {
@@ -233,7 +232,8 @@ li {
   border: 2px solid lightgray;
   border-radius: 24px;
   padding: 20px 192px 20px 32px;
-  position: relative;
+  font-weight: 500;
+  font-size: 100%;
 }
 
 .header__container--btn {
@@ -247,7 +247,9 @@ li {
   position: absolute;
   cursor: pointer;
   width: 10rem;
-  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 160px;
   font-weight: 700;
   line-height: 1;
   transition: all 300ms ease;
@@ -258,8 +260,8 @@ li {
 
 .header__container--form {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  position: relative;
+  justify-content: end;
 }
 
 .header__container--para-img {
@@ -285,7 +287,6 @@ li {
 .features__container {
   padding: 80px 0;
   animation: fade-left 650ms;
-
 }
 
 .features__container--para {
@@ -547,6 +548,7 @@ li {
   text-align: center;
   width: 30%;
   max-width: 384px;
+  min-width: 230px;
   padding: 8px 32px 0 32px;
   margin-top: 64px;
   margin-right: 32px;
@@ -963,6 +965,9 @@ li {
     margin-top: 32px;
   }
 
+  .steps__description--container {
+    text-align: center;
+  }
 }
 
 @media (max-width: 640px) {
@@ -982,8 +987,16 @@ li {
     justify-content: center;
     text-align: center;
   }
+
+  .header__input {
+    padding: 16px 0 16px 32px;
+  }
+
+  .header__container--form {
+    display: block;
+  }
+
+  .header__container--btn {
+    width: 100%;
+  }
 }
-
-
-
-
