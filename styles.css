@@ -217,8 +217,6 @@ li {
 
 .header__container--img2 {
   width: 60%;
-  max-width: 512px;
-  display: block;
 }
 
 .header__container--para {
@@ -846,6 +844,11 @@ li {
     flex-direction: column;
   }
 
+  .header__container--text {
+    width: 448px;
+    text-align: center;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -907,6 +910,10 @@ li {
     flex-direction: column;
   }
 
+  .h5__title-2 {
+    margin-top: 32px;
+  }
+
   .quality-work__container {
     display: flex;
     flex-direction: column-reverse;
@@ -938,6 +945,13 @@ li {
     display: flex;
     justify-content: center;
     text-align: center;
+  }
+
+  .values__description--container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .learn-more__btn {
@@ -997,6 +1011,10 @@ li {
   }
 
   .header__container--btn {
+    width: 100%;
+  }
+
+  .header__container--text {
     width: 100%;
   }
 }
