@@ -1017,4 +1017,26 @@ li {
   .header__container--text {
     width: 100%;
   }
+
+  .text__container {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+
+  .description__container {
+    width: 100%;
+    align-items: center;
+  }
+
+  .learn-more__btn {
+    width: 50%;
+  }
+
+  .steps__description--container {
+    margin-left: 0;
+  }
+
+  .values__description--container {
+    margin-right: 0;
+  }
 }
